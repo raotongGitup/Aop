@@ -1,6 +1,9 @@
 AOP的build中的配置：
+
 import org.aspectj.bridge.IMessage
+
 import org.aspectj.bridge.MessageHandler
+
 import org.aspectj.tools.ajc.Main
 
 
@@ -63,9 +66,13 @@ final def variants = project.android.applicationVariants
 
 
 variants.all { variant ->
+
     if (!variant.buildType.isDebuggable()) {
+    
         log.debug("Skipping non-debuggable build type '${variant.buildType.name}'.")
+        
         return;
+        
     }
 
     JavaCompile javaCompile = variant.javaCompile
