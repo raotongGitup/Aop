@@ -3,12 +3,18 @@ import org.aspectj.bridge.IMessage
 import org.aspectj.bridge.MessageHandler
 import org.aspectj.tools.ajc.Main
 
+
 buildscript {
+
     repositories {
+    
         mavenCentral()
+        
     }
     dependencies {
+    
         classpath 'org.aspectj:aspectjtools:1.8.9'
+        
         classpath 'org.aspectj:aspectjweaver:1.8.9'
     }
 }
